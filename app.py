@@ -1,7 +1,6 @@
 """
 AI-Driven Mental Wellness Companion
 Context-Aware Mood Prediction using Hybrid RF + LSTM
-Vellore Institute of Technology — Twinkle Handa & Gunika Kaushik
 """
 
 import streamlit as st
@@ -216,7 +215,6 @@ def train_model():
 # LSTM SIMULATION (lightweight, no TF required)
 # ─────────────────────────────────────────────
 def simulate_lstm_prediction(sleep, screen, activity, social):
-    """Simulate LSTM temporal prediction using heuristic sequence modeling."""
     history_window = st.session_state.history[-3:] if len(st.session_state.history) >= 3 else []
 
     base_score = (
